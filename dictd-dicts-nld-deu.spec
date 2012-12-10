@@ -85,3 +85,39 @@ fi
 %config		%conf_file
 
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-16mdv2011.0
++ Revision: 617718
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 0.1.0-15mdv2010.0
++ Revision: 428193
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 0.1.0-14mdv2009.0
++ Revision: 240603
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Sep 18 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.1.0-12mdv2008.0
++ Revision: 89589
+- rebuild
+
+
+* Fri Dec 22 2006 Gustavo De Nardin <gustavodn@mandriva.com> 0.1.0-11mdv2007.0
++ Revision: 101177
+- make use of update-dictd.conf scheme, introduced by dictd-1.10.1-4
+- bump release of all dictd-dicts-* to 11, for proper upgrades
+- BuildRequires only dictd-utils, for dictzip, not full dictd
+- versioned provides of meta packages, for proper upgrades
+- Requires only dictd-server, not full dictd
+- Requires(post/postun) for proper order in install and removal
+- introduce a hack to avoid being unremovable if dictd-server is removed
+  before, even though the Requires(postun)
+- Imported into SVN repo
+
